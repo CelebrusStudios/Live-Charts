@@ -235,7 +235,7 @@ namespace LiveCharts.Series
                     {
                         StartPoint = f,
                         Segments = new PathSegmentCollection(
-                            p.Select(x => new LineSegment {Point = new Point(x.X, x.Y)}))
+                            p.Select(x => new LineSegment {Point = new Point(x.X, x.Y)}).Count())
                     }
                 })
             };
@@ -262,7 +262,7 @@ namespace LiveCharts.Series
                     {
                         StartPoint = ToPlotArea(new Point(_chart.Min.X, _chart.Min.Y)),
                         Segments = new PathSegmentCollection(
-                            sp.Select(x => new LineSegment {Point = new Point(x.X, x.Y)}))
+                            sp.Select(x => new LineSegment {Point = new Point(x.X, x.Y)}).Count())
                     }
                 })
             };

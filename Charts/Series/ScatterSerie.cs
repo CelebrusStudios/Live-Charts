@@ -205,7 +205,7 @@ namespace LiveCharts.Series
                     {
                         StartPoint = f,
                         Segments = new PathSegmentCollection(
-                            p.Select(x => new LineSegment {Point = new Point(x.X, x.Y)}))
+                            p.Select(x => new LineSegment {Point = new Point(x.X, x.Y)}).Count())
                     }
                 })
             };
